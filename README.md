@@ -2,7 +2,7 @@
 
 鸿蒙端脚手架，自动生成代码，快速查找Api，一键模板，让学习与开发效率大幅度提高。
 
-<p align="center" style="font-size:12px;"><img src="images/harmony_main.jpg" width="300px" /><br/>json转对象功能</p>
+<p align="center" style="font-size:12px;"><img src="images/harmony_main.jpg" width="300px" />
 
 
 ## 最新提交
@@ -12,7 +12,7 @@
 ```
 更新时间：2023年11月15日
 更新日志：鸿蒙脚手架提交，完成json转对象功能。
-文章学习地址：
+文章学习地址：https://juejin.cn/post/7301515575453188111
 ```
 
 
@@ -20,7 +20,7 @@
 
 **温馨提示：只第一次需要执行三步，等前两步完成之后，以后只执行第三步即可，前两步无须再执行**
 
-#### 第一步：使用git down下项目
+#### 第一步：使用git clone下项目
 
 大家可以按照自己习惯的方式进行下载，比如使用IDE，使用TortoiseGit工具，或者使用命令，都行，以下是命令的形式下载：
 
