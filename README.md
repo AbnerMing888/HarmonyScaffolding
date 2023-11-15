@@ -2,11 +2,12 @@
 
 鸿蒙端脚手架，自动生成代码，快速查找Api，一键模板，让学习与开发效率大幅度提高。
 
+<p align="center" style="font-size:12px;"><img src="images/harmony_main.jpg" width="300px" /><br/>json转对象功能</p>
 
 
 ## 最新提交
 
-<p align="center" style="font-size:12px;"><img src="images/harmony_json" width="300px" /><br/>json转对象功能</p>
+<p align="center" style="font-size:12px;"><img src="images/harmony_json.jpg" width="300px" /><br/>json转对象功能</p>
 
 ```
 更新时间：2023年11月15日
@@ -19,7 +20,7 @@
 
 **温馨提示：只第一次需要执行三步，等前两步完成之后，以后只执行第三步即可，前两步无须再执行**
 
-### 第一步：使用git down下项目
+#### 第一步：使用git down下项目
 
 大家可以按照自己习惯的方式进行下载，比如使用IDE，使用TortoiseGit工具，或者使用命令，都行，以下是命令的形式下载：
 
@@ -29,7 +30,7 @@ git clone https://github.com/AbnerMing888/HarmonyScaffolding.git
 
 ```
 
-### 第二步：执行下载安装包命令
+#### 第二步：执行下载安装包命令
 
 **安装 Electron**
 
@@ -51,7 +52,7 @@ npm i -D @electron/remote
 
 ```
 
-### 第三步：根项目下执行命令
+#### 第三步：根项目下执行命令
 
 执行完上述两步之后，以后在进入项目，只执行如下命令即可，使用此命令的前提，你已经安装好了鸿蒙的开发环境了，并也配好了环境变量。
 
