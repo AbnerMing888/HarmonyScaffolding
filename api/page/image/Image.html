@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片(Image)</title>
+    <link rel="stylesheet" href="../../../json/androidstudio.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../page.css" type="text/css"/>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../../../jquery-2.2.0.min.js"></script>
+    <style>
+        div {
+            font-size: 14px;
+        }
+
+        .widget_body img {
+            width: 80px;
+            height: 80px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="widget">
+    <div class="widget_left">
+        <div class="widget_phone">
+            <div class="widget_action_bar">
+                图片(Image)
+            </div>
+            <div class="widget_body">
+                <div>
+                    <img src="../../../images/harmony_logo.jpg">
+                </div>
+                <div>
+                    <img src="../../../images/harmony_logo.jpg" style="border-radius: 10px;">
+                </div>
+                <div>
+                    <img src="../../../images/harmony_logo.jpg" style="border-radius: 80px;">
+                </div>
+                <div>
+                    <img src="../../../images/harmony_logo.jpg" style="border-radius: 80px;border: 1px solid #ff0000;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="widget_right">
+        <div class="widget_code">
+             <pre class="json_object">
+                <code class="language-javascript json_code" style="margin-top: -28px;"></code>
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="widget_info">
+    温馨提示：点击左侧效果，在右侧可以查看实现代码
+</div>
+</body>
+<script src="../../../json/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>

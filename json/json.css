@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.json_header {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 60px;
+}
+
+.json_body {
+    width: 90%;
+    margin-left: 5%;
+    height: 480px;
+    margin-top: 30px;
+}
+
+.json_body_left {
+    width: 48%;
+    height: 100%;
+    float: left;
+    margin-right: 2%;
+}
+
+.json_body_right {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+
+.json_content {
+    resize: none;
+    width: 98%;
+    height: 100%;
+    padding: 1%;
+}
+
+.json_body_left_top {
+    height: 400px;
+}
+
+.json_body_left_bottom {
+    height: 80px;
+    text-align: right;
+    line-height: 80px;
+}
+
+.json_body_left_bottom span {
+    background-color: red;
+    border-radius: 30px;
+    padding: 8px 15px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.json_class {
+    width: 98%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.json_object {
+    width: 100%;
+    height: 323px;
+    overflow-y: auto;
+    background-color: #282b2e;
+}
+
+.json_save_submit {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.json_save_submit span {
+    background-color: red;
+    border-radius: 30px;
+    padding: 8px 30px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.http_path {
+    padding-left: 5px;
+    width: 487px;
+    height: 30px;
+}
+
+.http_method {
+    width: 100px;
+    height: 30px;
+    float: right;
+}
+
+.http_header, .http_params {
+    width: 239px;
+    height: 70px;
+    margin-top: 5px;
+    resize: none;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+.http_submit {
+    float: right;
+    width: 98px;
+    height: 76px;
+    line-height: 76px;
+    text-align: center;
+    cursor: pointer;
+    color: red;
+    margin-top: 5px;
+    border: 1px solid red;
+}
+
+
+.http_submit:hover {
+    color: white;
+    background-color: red;
+}
+
+.json_save_path {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+}

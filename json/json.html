@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>json转对象</title>
+    <link rel="stylesheet" href="androidstudio.min.css" type="text/css"/>
+    <link rel="stylesheet" href="json.css" type="text/css"/>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="../utils.js"></script>
+    <script src="json.js"></script>
+
+</head>
+<body>
+<div class="json_all">
+    <div class="json_header">
+        <div>
+            <input placeholder="请求接口地址" class="http_path"/>
+            <select class="http_method">
+                <option value="0">GET</option>
+                <option value="1">POST</option>
+                <option value="1">PUT</option>
+                <option value="1">DELETE</option>
+            </select>
+        </div>
+        <div>
+            <textarea class="http_params" placeholder="请求参数，格式：key=value或 {key:value}"></textarea>
+            <textarea class="http_header" placeholder="请求头参数，格式：key=value"></textarea>
+            <div class="http_submit"><span>发起请求</span></div>
+        </div>
+    </div>
+    <div class="json_body">
+        <div class="json_body_left">
+            <div class="json_body_left_top">
+                <textarea placeholder="请输入Json数据……" class="json_content"></textarea>
+            </div>
+            <div class="json_body_left_bottom">
+                <span>转换对象</span>
+            </div>
+        </div>
+        <div class="json_body_right">
+            <pre class="json_object">
+                <code class="language-javascript json_code" style="margin-top: -20px;"></code>
+            </pre>
+            <div>
+                <input placeholder="对象名字" value="Test" class="json_class json_name"/>
+            </div>
+            <div>
+                <select class="json_save_path">
+
+                </select>
+            </div>
+            <div class="json_save_submit">
+                <span>保存</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>

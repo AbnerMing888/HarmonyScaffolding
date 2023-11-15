@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HarmonyOs可视化工具</title>
+    <link rel="stylesheet" href="harmony.css" type="text/css"/>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script>if (window.module) module = window.module;</script>
+    <script src="harmony.js"></script>
+
+</head>
+<body>
+<!--左边按钮-->
+<div class="left_content">
+    <div class="left_move_windows"></div>
+    <img src="../images/harmony_logo.jpg" class="harmony_logo_img">
+    <p class="harmony_logo_title">HarmonyOS脚手架</p>
+    <div class="left_menu">
+
+    </div>
+
+    <img src="../images/setting.png" class="left_setting"/>
+</div>
+<!--右边展示页面-->
+<div class="right_content">
+    <div class="right_top_menu">
+        <img src="../images/minimize.png" class="minimize" style="cursor: pointer">
+        <img src="../images/rect.png">
+        <img src="../images/close.png" class="close" style="cursor: pointer">
+    </div>
+    <iframe frameborder="no" border="0"
+            src="../create/create.html"
+            class="right_iframe"></iframe>
+</div>
+
+</body>
+</html>

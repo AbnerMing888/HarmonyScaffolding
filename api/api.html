@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件Api</title>
+    <link rel="stylesheet" href="awesomplete.css" type="text/css"/>
+    <link rel="stylesheet" href="swiper-3.2.7.min.css" type="text/css"/>
+    <link rel="stylesheet" href="api.css" type="text/css"/>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="../utils.js"></script>
+    <script src="awesomplete.js"></script>
+    <script src="swiper-3.4.0.jquery.min.js"></script>
+    <script src="api.js"/>
+    <script>if (window.module) module = window.module;</script>
+</head>
+<body>
+<div>
+    <div class="api_tab">
+        <div class="api_tab_left">
+            <span class="api_tab_item">UI组件</span>
+            <span class="api_tab_item">网络</span>
+            <span class="api_tab_item">工具</span>
+            <span class="api_tab_item">列表</span>
+            <span class="api_tab_item">其他</span>
+        </div>
+        <div class="api_tab_right">
+            <input class="awesomplete" list="mylist"/>
+            <datalist id="mylist" style="z-index: 1000;">
+                <option>Ada</option>
+                <option>A2</option>
+                <option>A2</option>
+                <option>A2</option>
+                <option>A2</option>
+                <option>A2</option>
+            </datalist>
+        </div>
+    </div>
+    <div style="clear: left;"></div>
+
+    <div class="container">
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper swiper-tab"></div>
+        </div>
+        <div class="swiper-container swiper2">
+            <div class="swiper-wrapper swiper-page"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+
+.awesomplete {
+    width: 230px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.api_tab {
+    margin-top: 18px;
+}
+
+.api_tab_left {
+    float: left;
+    margin-top: 5px;
+}
+
+.api_tab_right {
+    float: left;
+    margin-left: 20px;
+}
+
+.api_tab_item {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.tab_normal {
+    background-color: white;
+    color: #222222;
+}
+
+.tab_select {
+    background-color: red;
+    color: white;
+}
+
+/*以下是二级导航*/
+.container {
+    margin-top: 20px;
+}
+
+.swiper1 {
+    width: 100%;
+}
+
+.swiper1 .selected {
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+}
+
+.swiper1 .swiper-slide {
+    text-align: center;
+    font-size: 14px;
+    height: 30px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.swiper2 {
+    width: 100%;
+}
+
+.page_iframe {
+    width: 100%;
+    margin-top: 10px;
+    height: 580px;
+}

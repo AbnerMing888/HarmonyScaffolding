@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建项目</title>
+    <link rel="stylesheet" href="create.css" type="text/css"/>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="create.js"></script>
+</head>
+<body>
+<div>
+    <div class="create_title">HarmonyOs创建项目</div>
+    <div class="create_body">
+        <div class="input_div">
+            <div class="create_tag">Project name</div>
+            <div>
+                <input type="text" placeholder="项目名字" value="MyApplication" class="input_text input_project_name"/>
+            </div>
+        </div>
+        <div class="input_div">
+            <div class="create_tag">Bundle name</div>
+            <div>
+                <input type="text" placeholder="包名" value="com.gwm.myapplication" class="input_text input_bundle_name"/>
+            </div>
+        </div>
+        <div class="input_div">
+            <div class="create_tag">Save location</div>
+            <div style="float: left;margin-left: 33px;">
+                <input type="text" placeholder="存储路径" class="input_text input_save_path"/>
+            </div>
+            <img src="../images/location_icon.png" class="location_icon img_save_path"/>
+
+        </div>
+        <div style="clear: left;"></div>
+        <div class="input_div">
+            <div class="create_tag">Compile SDK</div>
+            <div>
+                <select class="create_select">
+                    <option>3.1.0(Api9)</option>
+                </select>
+            </div>
+        </div>
+        <div class="input_div">
+            <div class="create_tag">Module name</div>
+            <div>
+                <input type="text" placeholder="主模块名字" value="entry" class="input_text input_module_name"/>
+            </div>
+        </div>
+        <div class="input_div">
+            <div class="create_tag">Node</div>
+            <div style="float: left;margin-left: 33px;">
+                <input type="text" placeholder="node 路径" class="input_text input_save_node"/>
+            </div>
+            <img src="../images/location_icon.png" class="location_icon img_save_node"/>
+
+        </div>
+        <div style="clear: left;"></div>
+        <div class="create_submit">
+            <span class="create_submit_span">确认</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>

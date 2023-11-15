@@ -1,0 +1,66 @@
+.config_top_input {
+    text-align: center;
+    margin-top: 150px;
+}
+
+.config_file_input {
+    width: 60%;
+    height: 30px;
+}
+
+.select_file {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #222222;
+}
+
+.select_file:hover {
+    color: #ff0000;
+}
+
+.config_select_div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.config_desc {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+.config_input {
+    width: 100%;
+    height: 30px;
+}
+
+.config_submit {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.config_submit span {
+    cursor: pointer;
+    background-color: #ff0000;
+    padding: 10px 90px;
+    border-radius: 30px;
+}
+
+
+.config_author {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+.config_http_header {
+    width: 80%;
+    margin-top: 10px;
+    margin-left: 10%;
+    height: 80px;
+    resize: none;
+}

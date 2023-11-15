@@ -1,0 +1,15 @@
+{
+  "name": "harmonyscaffolding",
+  "version": "1.0.0",
+  "description": "鸿蒙自动化代码生成工具",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "AbnerMing",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron/remote": "^2.0.12",
+    "electron": "^15.0.0"
+  }
+}

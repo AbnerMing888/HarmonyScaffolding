@@ -1,0 +1,65 @@
+.create_title {
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.create_body {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.input_div {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.create_tag {
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    text-align: right;
+}
+
+.input_text {
+    height: 30px;
+    width: 300px;
+}
+
+.create_submit {
+    margin-top: 30px;
+}
+
+.create_submit_span {
+    border: red 1px solid;
+    border-radius: 30px;
+    padding: 10px 80px;
+    color: red;
+    cursor: pointer;
+}
+
+.create_submit_span:hover {
+    background-color: red;
+    color: white;
+}
+
+.location_icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    float: left;
+    margin-left: -28px;
+    margin-top: 8px;
+}
+
+.create_tag {
+    float: left;
+}
+
+.create_select {
+    width: 308px;
+    height: 38px;
+}
+

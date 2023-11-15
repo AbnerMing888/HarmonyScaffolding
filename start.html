@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmony</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            height: 100%;
+            font-size: 10px;
+        }
+
+        body {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial;
+            background-color: black;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width: 767px) {
+            html {
+                font-size: 6px;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            html {
+                font-size: 8px;
+            }
+        }
+
+        @media screen and (min-width: 1024px) and (max-width: 1199px) {
+            html {
+                font-size: 10px;
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            html {
+                font-size: 12px;
+            }
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            font-size: 10rem;
+            color: white;
+            transform: scale(2.5);
+            transform-origin: 100% 50%;
+            animation: move 0.8s 1.5s cubic-bezier(0.1, 0.6, 0, 1) forwards;
+        }
+
+        .delay {
+            opacity: 0;
+            animation: fade_in 2s 0.5s forwards;
+        }
+
+        .letter {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .letter .ul {
+            position: relative;
+            width: 7rem;
+            height: 3.5rem;
+            padding: 1rem;
+            list-style: none;
+            overflow: hidden;
+        }
+
+        .letter .ul:first-of-type {
+            padding-bottom: 0;
+        }
+
+        .letter .ul:last-of-type {
+            padding-top: 0;
+            /* margin-top: -2px; */
+            /* animation: letter-move .1s 1.2s forwards; */
+        }
+
+        .letter .ul .harmony {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            width: 5rem;
+            height: 5rem;
+            border: 1rem solid white;
+            border-radius: 50%;
+            transform: translateY(50%);
+            box-shadow: 0px 0px 1.5rem 0px white, inset 0 0 1rem white;
+            animation: move 1.2s forwards, shadow 1.5s 1.2s forwards;
+        }
+
+        .letter .ul:last-of-type > .harmony {
+            top: auto;
+            bottom: 1rem;
+            transform: translateY(-50%);
+            filter: url(#blur);
+        }
+
+        .letter svg {
+            position: absolute;
+            width: 0;
+            height: 0;
+        }
+
+        .letter .line {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .letter .line::after {
+            content: '';
+            width: 0%;
+            background-color: #146df7;
+            animation: line 0.5s 1.7s forwards;
+        }
+
+        .shadow__spot {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, transparent 6rem, black 20rem);
+            animation: fade_spot 1s 1.5s forwards;
+        }
+
+        @keyframes move {
+            to {
+                transform: none;
+            }
+        }
+
+        @keyframes shadow {
+            to {
+                box-shadow: none;
+            }
+        }
+
+        @keyframes fade_spot {
+            to {
+                transform: translateX(10rem) scale(5);
+            }
+        }
+
+        @keyframes fade_in {
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes line {
+            to {
+                width: 60%;
+            }
+        }
+
+        /* @keyframes letter-move {
+            to { margin-top: 0 }
+        } */
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <span class="delay">Harmony</span>
+    <div class="letter">
+        <ul class="ul">
+            <li class="harmony"></li>
+        </ul>
+        <ul class="ul">
+            <li class="harmony"></li>
+        </ul>
+        <svg>
+            <filter id="blur">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="0 6"/>
+            </filter>
+        </svg>
+        <div class="line"></div>
+    </div>
+    <span class="delay">S</span>
+</div>
+
+<div class="shadow__spot"></div>
+
+<script>
+    const filterElem = document.querySelector('feGaussianBlur')
+    const clearFilter = () => {
+        const value = parseFloat(filterElem.getAttribute('stdDeviation').split(' ')[1]) - 0.06
+        if (value > 0) {
+            filterElem.setAttribute('stdDeviation', `0 ${value}`)
+            requestAnimationFrame(clearFilter)
+        } else {
+            return
+        }
+    }
+    setTimeout(clearFilter, 300);
+
+    setTimeout(function () {
+        location.href = "main/harmony.html";
+    }, 3000);
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@app/log": "file:libs/log.har",
+    "@app/net": "file:libs/net-1.0.7.har",
+    "@app/refresh": "file:libs/refresh-1.0.2.har"
+  }
+}

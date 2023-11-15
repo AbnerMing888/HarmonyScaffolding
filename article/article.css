@@ -1,0 +1,132 @@
+.article_content {
+    margin-top: 50px;
+}
+
+.article_title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.article_img {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.article_logo {
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+}
+
+.article_time {
+    margin-top: 10px;
+    color: #666666;
+    font-size: 14px;
+}
+
+.article_info {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.article_name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.article_top_left {
+    width: 25%;
+    float: left;
+}
+
+.article_top_right {
+    width: 75%;
+    float: left;
+}
+
+.article_follow {
+    width: 50px;
+    height: 15px;
+}
+
+.article_item_left {
+    width: 75%;
+    float: left;
+}
+
+.article_item_right {
+    width: 25%;
+    float: left;
+}
+
+.article_item_image {
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.article_item_title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #222222;
+    cursor: pointer;
+    margin-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article_item_desc {
+    font-size: 14px;
+    color: #666666;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.article_item_star {
+    font-size: 12px;
+    color: #999999;
+    margin-top: 10px;
+}
+
+.article_item {
+    height: 120px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.article_item_title:hover {
+    color: #146df7;
+}
+
+.article_subscribe {
+    background-color: #146df7;
+    color: white;
+    font-size: 11px;
+    padding: 2px 4px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.article_wx_div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+.article_wx {
+    width: 150px;
+    margin-top: 36%;
+}

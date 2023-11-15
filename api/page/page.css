@@ -1,0 +1,55 @@
+
+.widget {
+    width: 100%;
+}
+
+.widget_left {
+    width: 50%;
+    float: left;
+}
+
+.widget_right {
+    width: 50%;
+    float: left;
+}
+
+.widget_phone {
+    width: 90%;
+    height: 525px;
+    border-radius: 5px;
+    border: 1px solid #222222;
+}
+
+.json_code {
+    height: 498px;
+}
+
+.widget_action_bar {
+    height: 40px;
+    line-height: 40px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.widget_info {
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    color: red;
+}
+
+.widget_body {
+    text-align: center;
+}
+
+.widget_body div{
+    cursor: pointer;
+}
+
+.widget_body_item{
+    margin-top: 10px;
+}

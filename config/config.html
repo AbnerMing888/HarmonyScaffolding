@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>基础配置</title>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../jquery-2.2.0.min.js"></script>
+    <script src="../utils.js"></script>
+    <script src="config.js"/>
+    <script>if (window.module) module = window.module;</script>
+    <link rel="stylesheet" href="config.css" type="text/css"/>
+</head>
+<body>
+<div>
+    <div class="config_top_input">
+        <!--选择路径-->
+        <input class="config_file_input" readonly="readonly"/>
+    </div>
+    <div class="config_select_div">
+        <span class="select_file">选择项目生成路径</span>
+    </div>
+    <div class="config_desc">
+        <span style="color: #ff0000;font-size: 12px">
+             *
+        </span>
+        <span style="color: #666666;font-size: 12px">
+           选择项目生成路径，是便于各个功能文件的存储，每次选择之后，都会对您的选择进行储存，<strong>一般而言，相同的项目，您只选择一次即可</strong>。
+        </span>
+        <div style="color: #666666;font-size: 12px;margin-top: 5px;">
+            <span><strong>注意：</strong>如果选择的是HarmonyOs项目，各个文件会生成相对应的目录下</span>
+        </div>
+    </div>
+
+    <!--文件名字-->
+    <div class="config_author">
+        <input placeholder="类作者" class="config_input"/>
+        <div style="margin-top: 5px;">
+            <span style="font-size: 11px;color: #ff0000;">生成类文件的作者</span>
+        </div>
+    </div>
+
+    <div>
+        <textarea class="config_http_header" placeholder="设置全局请求头，以key=value的形式，每行一个"></textarea>
+    </div>
+
+    <div class="config_submit">
+        <span>确定</span>
+    </div>
+
+</div>
+</body>
+</html>

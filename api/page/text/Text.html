@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文本(Text)</title>
+    <link rel="stylesheet" href="../../../json/androidstudio.min.css" type="text/css"/>
+    <link rel="stylesheet" href="../page.css" type="text/css"/>
+    <script>if (typeof module === 'object') {
+        window.module = module;
+        module = undefined;
+    }</script>
+    <script src="../../../jquery-2.2.0.min.js"></script>
+    <script src="text.js"></script>
+    <style>
+        div {
+            font-size: 14px;
+        }
+
+        .widget_body {
+            overflow-y: auto;
+            height: 484px;
+        }
+    </style>
+</head>
+<body>
+<div class="widget">
+    <div class="widget_left">
+        <div class="widget_phone">
+            <div class="widget_action_bar">
+                文本(Text)
+            </div>
+            <div class="widget_body">
+                <div class="widget_body_item">普通文字</div>
+                <div class="widget_body_item" style="font-weight: bold">文字加粗</div>
+                <div class="widget_body_item" style="font-style: italic">文字倾斜</div>
+                <div class="widget_body_item" style="color: #ff0000;">文字颜色</div>
+                <div class="widget_body_item" style="font-size: 20px">文字大小</div>
+                <div class="widget_body_item"><span style="background-color: red;color: white;">文字背景</span></div>
+                <div class="widget_body_item">
+                    <span style="background-color: red;border-radius: 5px;color: white;">圆角文字背景</span>
+                </div>
+                <div class="widget_body_item" style="width:100%;text-align: center;">
+                    <div style="background-color: red;
+                    color: white;
+                    width:30px;height:30px;line-height: 30px;
+                    margin-left: 44%;
+                    border-radius: 30px;">圆
+                    </div>
+                </div>
+                <div class="widget_body_item">超出文字省略号……</div>
+                <div class="widget_body_item">文字点击事件</div>
+                <div class="widget_body_item">
+                    富文本效果：
+                    <span style="color: red;text-decoration: underline;">《用户协议》</span>
+                    和
+                    <span style="color: red;text-decoration: underline;">《隐私政策》</span>
+                </div>
+                <div class="widget_body_item">
+                    <img src="../../../images/harmony_logo.jpg" style="width: 12px;height: 12px;">
+                    <span>文字左侧带图片</span>
+                </div>
+                <div class="widget_body_item">
+                    <span>文字右侧带图片</span>
+                    <img src="../../../images/harmony_logo.jpg" style="width: 12px;height: 12px;">
+                </div>
+                <div class="widget_body_item">
+                    <img src="../../../images/harmony_logo.jpg" style="width: 12px;height: 12px;">
+                    <br/>
+                    <span>文字上侧带图片</span>
+                </div>
+                <div class="widget_body_item">
+                    <span>文字下侧带图片</span>
+                    <br/>
+                    <img src="../../../images/harmony_logo.jpg" style="width: 12px;height: 12px;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="widget_right">
+        <div class="widget_code">
+             <pre class="json_object">
+                <code class="language-typescript json_code" style="margin-top: -28px;"></code>
+            </pre>
+        </div>
+    </div>
+</div>
+<div class="widget_info">
+    温馨提示：点击左侧效果，在右侧可以查看实现代码
+</div>
+</body>
+<script src="../../../json/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</html>
