@@ -10,8 +10,8 @@
 <p align="center" style="font-size:12px;"><img src="images/harmony_json.jpg" width="300px" /><br/>json转对象功能</p>
 
 ```
-更新时间：2023年11月15日
-更新日志：鸿蒙脚手架提交，完成json转对象功能。
+更新时间：2023年11月30日
+更新日志：鸿蒙脚手架提交，完成组件Api文本和图片功能。
 文章学习地址：https://juejin.cn/post/7301515575453188111
 ```
 

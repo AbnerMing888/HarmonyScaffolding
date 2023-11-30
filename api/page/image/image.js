@@ -1,0 +1,1 @@
+$(function(){$('.widget_body_item')['each'](function(_0x5c2e80){$(this)['on']('click',function(){let _0x53d5f8=hljs['highlightAuto'](imageCodeArray[_0x5c2e80])['value'];$('.json_code')['html'](_0x53d5f8);});});});

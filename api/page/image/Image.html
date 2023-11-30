@@ -10,15 +10,24 @@
         module = undefined;
     }</script>
     <script src="../../../jquery-2.2.0.min.js"></script>
+    <script src="code.js"></script>
+    <script src="image.js"></script>
     <style>
         div {
             font-size: 14px;
         }
 
-        .widget_body img {
+        .widget_body_image {
             width: 80px;
             height: 80px;
             margin-top: 10px;
+        }
+
+        .img_black {
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            filter: grayscale(100%);
         }
     </style>
 </head>
@@ -30,18 +39,94 @@
                 图片(Image)
             </div>
             <div class="widget_body">
-                <div>
-                    <img src="../../../images/harmony_logo.jpg">
+                <div class="widget_body_item">
+                    <img style="margin-top: 10px;width: 90%;" src="../../../images/hos_logo.jpg">
+                    <p>(普通图片)</p>
                 </div>
-                <div>
-                    <img src="../../../images/harmony_logo.jpg" style="border-radius: 10px;">
+                <div class="widget_body_item">
+                    <img style="margin-top: 10px;width: 90%;"
+                         src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a35a1eff167c4a6b85455469e2be1dba~tplv-k3u1fbpfcp-jj:135:90:0:0:q75.awebp#?w=470&h=314&s=1171503&e=gif&f=32&b=d0c0a4">
+                    <p>(加载动图)</p>
                 </div>
-                <div>
-                    <img src="../../../images/harmony_logo.jpg" style="border-radius: 80px;">
+                <div class="widget_body_item">
+                    <img style="margin-top: 10px;width: 90%;" src="https://www.vipandroid.cn/ming/image/gan.png">
+                    <p>(网络图片)</p>
                 </div>
-                <div>
-                    <img src="../../../images/harmony_logo.jpg" style="border-radius: 80px;border: 1px solid #ff0000;">
+
+                <div class="widget_body_item">
+                    <img class="widget_body_image" src="../../../images/hos_logo.jpg"
+                         style="margin-top: 10px;width: 90%;height:150px;border-radius: 10px;">
+                    <p>(圆角图片)</p>
                 </div>
+
+                <div class="widget_body_item">
+                    <img class="widget_body_image" src="../../../images/harmony_logo.jpg" style="border-radius: 80px;">
+                    <p>(圆形图片clip设置)</p>
+                </div>
+
+                <div class="widget_body_item">
+                    <img class="widget_body_image" src="../../../images/harmony_logo.jpg" style="border-radius: 80px;">
+                    <p>(圆形图片borderRadius设置)</p>
+                </div>
+
+                <div class="widget_body_item">
+                    <img class="widget_body_image" src="../../../images/hos_logo.jpg"
+                         style="margin-top: 10px;width: 90%;height:150px;border-radius: 10px;border: 1px solid #ff0000;">
+                    <p>(圆角图片边线链式调用)</p>
+                </div>
+                <div class="widget_body_item">
+                    <img class="widget_body_image" src="../../../images/hos_logo.jpg"
+                         style="margin-top: 10px;width: 90%;height:150px;border-radius: 10px;border: 1px solid #ff0000;">
+                    <p>(圆角图片边线border调用)</p>
+                </div>
+
+                <div class="widget_body_item">
+                    <img class="widget_body_image" src="../../../images/harmony_logo.jpg"
+                         style="border-radius: 80px;border: 1px solid #ff0000;">
+                    <p>(圆形图片边线border调用)</p>
+                </div>
+                <div class="widget_body_item">
+                    <img class="widget_body_image" src="../../../images/harmony_logo.jpg"
+                         style="border-radius: 80px;border: 1px solid #ff0000;">
+                    <p>(圆形图片边线链式调用)</p>
+                </div>
+                <div class="widget_body_item">
+                    <img style="margin-top: 10px;width: 90%;" src="../../../images/hos_logo.jpg">
+                    <p>(占位图片设置)</p>
+                </div>
+
+                <div class="widget_body_item">
+                    <img style="margin-top: 10px;width: 90%;" src="../../../images/hos_logo.jpg">
+                    <p>(图片加载错误设置)</p>
+                </div>
+
+                <div class="widget_body_item">
+                    <img style="margin-top: 10px;width: 90%;" src="../../../images/hos_logo.jpg">
+                    <p>(获取图片的宽高，宽：500 高：150)</p>
+                </div>
+
+                <div class="widget_body_item">
+                    <img class="img_black" style="margin-top: 10px;width: 90%;" src="../../../images/hos_logo.jpg">
+                    <p>(黑白渲染模式图片)</p>
+                </div>
+
+                <div class="widget_body_item">
+                    <img style="object-fit: cover;margin-top: 10px;width: 90%;height: 100px;"
+                         src="../../../images/hos_logo.jpg">
+                    <p>(图片填充效果Cover)</p>
+                </div>
+
+                <div class="widget_body_item">
+                    <img style="object-fit: fill;margin-top: 10px;width: 90%;height: 100px;"
+                         src="../../../images/hos_logo.jpg">
+                    <p>(图片填充效果Fill)</p>
+                </div>
+                <div class="widget_body_item">
+                    <img style="object-fit: contain;margin-top: 10px;width: 90%;height: 100px;"
+                         src="../../../images/hos_logo.jpg">
+                    <p>(图片填充效果Contain)</p>
+                </div>
+
             </div>
         </div>
     </div>
